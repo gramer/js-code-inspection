@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 			timeout: 30000,
 			"--web-security": "no",
 			coverage: {
-				src: [ "src/<%= pkg.name %>.js" ],
+				src: [ "src/simple.js", "src/Person.js" ],
 				instrumentedFiles: "temp/",
 				htmlReport: "build/report/coverage",
 				lcovReport: "build/report/lcov",
@@ -117,6 +117,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
 
   // Default task.
-  grunt.registerTask("default", ["jshint", "qunit", "concat", "uglify"]);
+  grunt.registerTask("default", [ "qunit", "concat", "uglify"]);
 
 };
