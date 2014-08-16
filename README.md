@@ -5,7 +5,6 @@ js-code-inspection
 javascript 테스트 실행 및 커버리지를 lcov 형태로 생성한다. 
 
 ###Requirments
-다음의
 * phantomJs
 * npm
 * sonar (run.sh 실행 시 필요)
